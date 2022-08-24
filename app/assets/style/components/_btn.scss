@@ -1,0 +1,32 @@
+
+
+.borderBtn {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 8px;
+  border: 1px solid $white;
+  color: $white;
+}
+
+.btn-check:checked + .borderBtn, .btn-check:active + .borderBtn, .borderBtn.active, .borderBtn:hover {
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.step {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  line-height: 1;
+  color: $white;
+  background-color: $dark;
+  border-radius: 50%;
+  padding: 3px 6px;
+  border: 1px solid $lightGray;
+  &.active {
+    background-color: $primary;
+    border: 1px solid transparent;
+  }
+}

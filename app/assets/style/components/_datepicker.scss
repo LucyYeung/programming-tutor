@@ -1,0 +1,13 @@
+.datepicker-main {
+  color: #000;
+}
+
+.datepicker-cell:not(.disabled):hover {
+  background-color: #e8e8e8;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: #e8e8e8;
+  color: #000;
+}

@@ -1,0 +1,130 @@
+.font-azeret {
+  font-family: "Azeret Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.-z-1 {
+  z-index: -1;
+}
+
+.bg-lg-dark {
+  @include pc {
+    background-color: $dark;
+  }
+}
+
+$text-angle-list: (100);
+@each $value in $text-angle-list {
+  .bg-gradient-#{$value} {
+    @include text-gradient($value * 1deg);
+  }
+}
+
+$bg-angle-list: (97, 99, 102, 104, 107, 180);
+@each $value in $bg-angle-list {
+  .bg-gradient-#{$value} {
+    @include bg-gradient($value * 1deg);
+  }
+}
+
+$font-size-list: (
+  lg: 18,
+  3xl: 24,
+  4xl: 28,
+  6xl: 48,
+);
+@each $name, $size in $font-size-list {
+  .fs-md-#{$name} {
+    @include pad {
+      font-size: $size * 1px;
+    }
+  }
+}
+
+.w-98 {
+  width: 98%;
+}
+
+$width-xl-list: (416, 856);
+@each $value in $width-xl-list {
+  .width-xl-#{$value} {
+    @include xl {
+      width: $value * 1px;
+    }
+  }
+}
+
+.w-xl-auto {
+  @include xl {
+    width: auto;
+  }
+}
+
+$width-percent-list: (42, 60, 98);
+@each $value in $width-percent-list {
+  .w-lg-#{$value} {
+    @include pc {
+      width: $value * 1%;
+    }
+  }
+}
+
+$width-list: (32, 100, 130, 204, 140);
+@each $value in $width-list {
+  .width-#{$value} {
+    width: $value * 1px;
+  }
+}
+
+$height-list: (1, 32, 56, 100);
+@each $value in $height-list {
+  .height-#{$value} {
+    height: $value * 1px;
+  }
+}
+
+$opacity: (0, 50, 80, 90);
+@each $value in $opacity {
+  .opacity-#{$value} {
+    opacity: $value * 1%;
+  }
+}
+
+.opacity-lg-50 {
+  @include pc {
+    opacity: 50%;
+  }
+}
+
+.position-lg-absolute {
+  @include pc {
+    position: absolute;
+  }
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+
+$rotate-angle: (90, 180, 270);
+@each $angle in $rotate-angle {
+  .rotate-#{$angle} {
+    transform: rotate($angle * 1deg);
+  }
+}
+
+$translate-x-list: (-6, 6);
+@each $value in $translate-x-list {
+  .translate-x-#{$value} {
+    @include xl {
+      transform: translateX($value * .25rem);
+    }
+    @include xxl {
+      transform: translateX($value * .5rem);
+    }
+  }
+}
+
+.bg-share {
+  background: url('../images/bg_share.jpg') no-repeat center / cover;
+}
