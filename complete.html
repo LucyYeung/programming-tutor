@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+    <title>完成訂購</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -44,7 +44,57 @@
         <hr class="half-color">
       </nav>
   
-      <%- contents %>
+      
+<main class="bg-black">
+  <section class="bg-black bg-lg-dark py-4 mb-5 mb-lg-12">
+    <div class="container">
+      <div class="row justify-content-center mb-1">
+        <div class="col-9 col-lg-7">
+          <div class="mx-auto position-relative m-4">
+            <div class="progress height-1">
+              <div class="progress-bar w-100" role="progressbar" aria-label="Progress" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <button type="button" class="step start-0 active">✔</button>
+            <button type="button" class="step start-50 active">✔</button>
+            <button type="button" class="step start-100 active">✔</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-lightGray">
+        <div class="col-4 col-md-3 col-lg-5 text-start text-center position-relative">
+          <p class="text-primary ms-md-6">課程報名</p>
+        </div>
+        <div class="col-4 col-md-6 col-lg-2 text-center">
+          <p class="text-primary">信用卡付款</p>
+        </div>
+        <div class="col-4 col-md-3 col-lg-5 text-end text-center">
+          <p class="text-primary me-md-6">付款成功</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mb-10 mb-lg-20">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-xl-4">
+          <div class="bg-grayBg justify-content-center p-6 py-md-12 px-md-8">
+            <div class="d-flex justify-content-center align-items-center mb-6 mb-lg-12">
+              <span class="material-icons-outlined fs-6xl lh-1 text-primary me-4">verified</span>
+              <p class="fs-3xl fw-bold text-white text-center">完成訂購</p>
+            </div>
+            <p class="text-white mb-6 mb-lg-8">
+              恭喜您已完成
+              <span class="fw-bold">「2022 Python 全攻略｜從入門到實務」</span>
+              課程報名，請注意郵件訊息，家教老師將與您聯繫！
+            </p>
+            <a href="./class.html" class="btn text-white bg-gradient-102 rounded-3 width-204 py-2 d-block mx-auto">看看其他課程</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
   
       <footer class="footer bg-footer text-gray text-center py-6">
         Coding Home © 2022 All Rights Reserved

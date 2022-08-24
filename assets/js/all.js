@@ -1,8 +1,9 @@
+"use strict";
+
 var swiper = new Swiper(".class-swiper", {
   slidesPerView: "auto",
-  spaceBetween: 16,
+  spaceBetween: 16
 });
-
 var swiper = new Swiper(".section8-swiper", {
   mousewheel: true,
   keyboard: true,
@@ -12,15 +13,14 @@ var swiper = new Swiper(".section8-swiper", {
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev"
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-  },
+    clickable: true
+  }
 });
-
-Datepicker.locales["zh-TW"] ={
+Datepicker.locales["zh-TW"] = {
   days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
   daysShort: ["日", "一", "二", "三", "四", "五", "六", "日"],
   daysMin: ["日", "一", "二", "三", "四", "五", "六", "日"],
@@ -30,10 +30,10 @@ Datepicker.locales["zh-TW"] ={
   titleFormat: "y年MM月",
   today: "今天",
   clear: "清除"
-}
-
-const elem = document.querySelector('input[name="datepicker"]');
-const datepicker = new Datepicker(elem, {
+};
+var elem = document.querySelector('input[name="datepicker"]');
+var datepicker = new Datepicker(elem, {
   autohide: true,
-  language: 'zh-TW',
+  language: 'zh-TW'
 });
+//# sourceMappingURL=all.js.map

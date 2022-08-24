@@ -1,10 +1,50 @@
----
-title: 報名
-layout: ./app/layout.ejs
-engine: ejs
-current: signup
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>報名</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="bg-black">
+    <div class='wrapper'>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-grayBg pb-0 sticky-top">
+        <div class="container d-flex justify-content-between">
+          <h1 class="mb-6">
+            <a class="navbar-brand" href="/">CodingHome</a>
+          </h1>
+          <button class="navbar-toggler mb-6" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item text-center">
+                <a class="nav-link py-3 fs-lg" aria-current="page" href="/">首頁</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link py-3 fs-lg" href="./class.html">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link w-100 py-3 fs-lg d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <span class="material-icons me-1">account_circle</span>
+                  登入
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="half-color">
+      </nav>
+  
+      
 <main class="bg-black">
   <section class="bg-black bg-lg-dark py-4 mb-2 mb-xl-12">
     <div class="container">
@@ -120,3 +160,51 @@ current: signup
     </div>
   </section>
 </main>
+  
+      <footer class="footer bg-footer text-gray text-center py-6">
+        Coding Home © 2022 All Rights Reserved
+      </footer>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content border bg-dark text-white d-flex flex-column align-items-center p-6">
+          <div class="w-100 position-relative">
+            <h5 class="fs-3xl fw-bold text-center">登入</h5>
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body  text-lightGray">
+            <div class="mx-auto">
+              <label class="">信箱
+                <input type="email" class="form-control bg-black text-white rounded-1 py-2 px-4 mb-6 mt-1" placeholder="請輸入信箱">
+              </label>
+              <label class="">密碼
+                <input type="email" class="form-control bg-black text-white rounded-1 py-2 px-4 mb-6 mt-1" placeholder="請輸入密碼">
+              </label>
+            </div>
+            <a href="" class="btn bg-gradient-97 w-100 text-white rounded-3 mb-6 mb-lg-12">登入</a>
+            <div class="position-relative mb-8">
+              <hr>
+              <div class="position-absolute width-130 start-50 top-0 translate-middle px-4 bg-dark">其他登入方式</div>
+            </div>
+            <div class="btn btn-outline-white w-100 rounded-1 position-relative mb-4 mb-lg-6">
+              <img class="icon" src="./assets/images/icon_fb.svg" alt="fb">
+              <p class="text-center">Facebook 登入</p>
+            </div>
+            <div class="btn btn-outline-white w-100 rounded-1 position-relative">
+              <img class="icon" src="./assets/images/icon_google.svg" alt="google">
+              <p class="text-center">Google 登入</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
